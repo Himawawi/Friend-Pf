@@ -1,0 +1,190 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#headname {
+  letter-spacing: 2px;
+  text-align: center;
+  list-style-type: none;
+  font-stretch: condensed;
+}
+
+body {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+#header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.vid {
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  margin: 100px;
+}
+
+h2 {
+  letter-spacing: 1px;
+  text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.aboutmetext {
+  width: 400px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: larger;
+}
+
+.me {
+  border-radius: 50%;
+}
+
+#portfolio {
+  background-color: white;
+  padding-top: 100px;
+  width: 100%;
+  margin-left: 0;
+}
+
+h2 {
+  font-size: 28.8px;
+}
+
+.grid-container {
+  display: grid;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: 380px 380px;
+  grid-template-rows: 280px 280px;
+}
+
+.thumbnail {
+  position: absolute;
+  width: 380px;
+  height: 280px;
+  filter: brightness(75%);
+  border-radius: 3%;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+#contactme {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer {
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  height: 100px;
+}
+
+.footertext {
+  padding: 30px 25%;
+}
+
+@media (max-width: 1024px) {
+  #header {
+    width: 100%;
+  }
+
+  p {
+    font-size: smaller;
+  }
+
+  #about{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutmetext{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 801px) {
+
+  #footer{
+    text-align: center;
+  }
+
+  .footertext {
+    font-size: smaller;
+  }
+
+
+
+  .grid-container{
+    grid-template-columns: 85%;
+    grid-template-rows: 25rem 25rem 25rem 25rem;
+
+  }
+
+  .grid-item{
+    width: 100%;
+    
+    object-fit: cover;
+  }
+
+  .thumbnail{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 481px){
+  .grid-container{
+    grid-template-columns: 85%;
+    grid-template-rows: 15rem 15rem 15rem 15rem;
+  }
+}
